@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/swiper.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tejas Pandule - Portfolio</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .nav-items {
+          @apply cursor-pointer;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-[var(--bg-primary)] text-[var(--color-primary)]">
+    <!-- NAV section -->
+    <div aria-label="menu"
+        class="z-30 grid transition grid-cols-3 md:hidden fixed translate-y-52 bottom-0 bg-[var(--bg-container-primary)] w-full items-center justify-center border-t border-t-[var(--border-secondary)] text-[var(--color-primary) text-sm">
+        <a href="#home" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-estate"></i>
+            Home
+        </a>
+        <a href="#aboutMe" class="menu-link flex flex-col items-center justify-center py-4 ">
+            <i class="uil uil-notes"></i>About
+        </a>
+        <a href="#experience" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-flask-potion"></i>Education
+        </a>
+        <a href="#projects" class="menu-link flex flex-col items-center justify-center py-4 ">
+            <i class="uil uil-hard-hat" ></i>Projects
+        </a>
+        <a href="#home" class="menu-link flex flex-col items-center justify-center py-4">
+            <i class="uil uil-at"></i>Contact
+        </a>
+    </div>
+
+    <nav
+        class="flex sticky px-2 relative -top-1 z-10 drop-shadow-lg justify-between items-center h-12 w-full bg-[var(--blueshade)] text-[var(--color-secondary)] border-b border-b-[var(--border-secondary)]">
+        <div class="container mx-auto flex justify-between">
+            <div class="font-bold">Portfolio</div>
+            <ul class="hidden md:flex gap-8 text-xs text-[var(--color-secondary)] nav-links">
+                <a href="#home">
+                    <li class="nav-items font-bold active-nav-link">Home</li>
+                </a>
+                <a href="#aboutMe">
+                    <li class="nav-items font-bold ">About</li>
+                </a>
+                <a href="#experience">
+                    <li class="nav-items font-bold">Education</li>
+                </a>
+                <a href="#projects">
+                    <li class="nav-items  font-bold">Projects</li>
+                </a>
+                <a href="#blog">
+                    <li class="nav-items font-bold">Certifications</li>
+                </a>
+                <a href="#home">
+                    <li class="nav-items font-bold">Contact</li>
+                </a>
+            </ul>
+            <i class="block md:hidden uil uil-bars pr-2 open-menu"></i>
+        </div>
+    </nav>
+
+
+    <!-- Hero section -->
+
+    <section id="home"
+        class="h-96 flex flex-col gap-4 items-center justify-center bg-[var(--blueshade)] text-[var(--color-secondary)] drop-shadow-xl ">
+            <img src="assets/Tejuu.png" width="200"/>
+    
+        <h2 class="text-3xl font-medium text-center w-70">
+            Tejas Pandule
+            <div class="text-sm font-medium text-lg my-2 ]">
+                Computer Engineering Student..!
+              
+            </div>
+        </h2>
+        <div class="flex gap-7 drop-shadow-xl">
+            <a href="https://www.linkedin.com/in/tejas-pandule/">
+                <img src="./assets/linkedin.png" width="30" ></a>
+            <a href="https://github.com/Tejas-Pandule">
+                <img src="./assets/github.png" width="30"></a>
+            <a href="mailto:tejaspandule9036@gmail">
+                <img src="./assets/mail.png" width="33" ></a>
+              
+        </div>
+        
+    </section>
+
+    <!-- Container -->
+    <div class="flex flex-col container mx-auto p-4 ">
+        <!-- About me -->
+        <section class="flex flex-col gap-6 pt-16 " id="aboutMe">
+            <h2 class="text-xl font-bold">About Me</h2>
+            <div class="flex gap-6 ">
+                <img src="./assets/Tejuu.png"
+                    class="hidden md:block h-20 w-20 rounded-full bg-[var(--bg-secondary)]" />
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 shadow-lg bg-[var(--lightblue)] rounded-lg text-[var(--color-info)] text-xs gap-6 p-6">
+                    <div class="flex flex-1 col-span-1 justify-between flex-col">
+                        <div class=" text-[var(--bg-black)] font-medium " >
+                            Hello, It's Me Tejas Pandule And I'm an Android Developer!
+                            "Undergraduate Engineering student, Currently Studying in 4th year of B.E in <b> Computer Engineering.</b>
+                            Will be graduating in June 2024. I like to work on developing mobile apps and websites. Exploring and experimenting with technology and tools it's my passion"
+                            To know more about my professional journey and my technical expertise, delve into the
+                            depths of my comprehensive resume.
+                         
+                        </div>
+                        <div class="flex items-center mt-4">
+                            <a href="./assets/csv.pdf" download="Tejas Pandule.pdf">
+                                <button class="rounded-full text-white py-2 px-4 bg-[--red]">
+                                    Download Resume
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-1 col-span-2">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+                            <div class="flex flex-col justify-start mb-2 gap-2">
+                                <div class="flex justify-between text-[var(--dark-blue)]">
+                                    <div>Android App Development (Kotlin Native)</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div
+                                        class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% h-full rounded-full w-[90%]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2 text-[var(--dark-blue)]">
+                                <div class="flex justify-between">
+                                    <div>Java & OOP</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full text-[var(--dark-blue)]">
+                                    <div class="bg-[var(--purple)] h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2 text-[var(--dark-blue)]">
+                                <div class="flex justify-between">
+                                    <div>Flutter</div>
+                                    <div>50%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--green)] h-full rounded-full w-[50%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2 text-[var(--dark-blue)]">
+                                <div class="flex justify-between">
+                                    <div>Firebase</div>
+                                    <div>80%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--dark-blue)] h-full rounded-full w-[80%]"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-start mb-2 gap-2 text-[var(--dark-blue)]">
+                                <div class="flex justify-between">
+                                    <div>Database (Sqlite, Room Database)</div>
+                                    <div>80%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--orange)] h-full rounded-full w-[80%]"></div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col justify-start mb-2 gap-2 text-[var(--dark-blue)]">
+                                <div class="flex justify-between">
+                                    <div>Git & GitHub</div>
+                                    <div>90%</div>
+                                </div>
+                                <div class="bg-gray-300 h-2 rounded-full">
+                                    <div class="bg-[var(--blue)] h-full rounded-full w-[90%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- Experience -->
+
+        <section class="pt-16" id="experience">
+            <h2 class="text-xl font-bold">Education & Experience</h2>
+            <div class="flex flex-col md:flex-row mt-6 gap-4 text-[var(--color-primar)]">
+                <div class="flex flex-col flex-1 gap-2 bg-[--pitch] rounded-lg drop-shadow-xl p-6">
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-[var(--color-primary)] text-sm gap-2 my-1">
+                            <div class="text-xs">2020-2024 (Present) <i class='bx bxs-map'></i> Pune, India</div>
+                            <h2 class="text-lg font-bold text-[var(--bg-black)]">B.E in Computer Engineering</h2>
+                            Sinhgad Institute Of Technology, Lonavala
+                            <p class="text-[var(--bg-black)]"><b >Grade : 8.3</b></p>
+                            <p></p>
+
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-[var(--color-primary)] text-sm gap-2 my-1">
+                            <div class="text-xs">2020, <i class='bx bxs-map'></i> Pune, India</div>
+                            <h2 class="text-lg font-bold text-[var(--bg-black)]">HSC</h2>
+                             Vidyadham Jr. College Of Science, Shirur
+                            <p class="text-[var(--bg-black)]"> <b>Percentage : 76.92%  </b></p>
+                            <p></p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-[var(--color-primary)] text-sm gap-2 my-1">
+                            <div class="text-xs">2018, <i class='bx bxs-map'></i> Ahmednagar, India</div>
+                            <h2 class="text-lg font-bold text-[var(--bg-black)]">SSC</h2>
+                            New English School, Supa
+                            <p class="text-[var(--bg-black)]"> <b>Percentage : 89.60%  </b></p>
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex flex-col flex-1 bg-[var(--pitch)] rounded-lg shadow-lg p-6">
+                    <div class="flex gap-6">
+                        <div class="flex flex-col text-[var(--red)] items-center">
+                            <i class="uil uil-window"></i>
+                            <div class="flex-grow w-[0.5px] bg-[var(--red)]"></div>
+                        </div>
+                        <div class="flex flex-col text-sm gap-2 my-1">
+                            <div class="text-xs">Jan 2023 - Feb 2023</div>
+                            <h2 class="text-lg font-bold text-[var(--bg-black)]">Android App Development</h2>
+                            Android App Development Internship
+                            Oasis Infobyte, Pvt, Ltd
+                            This was a <b>1-Month virtual Internship</b> In this Internship,
+                             I was doing tasks given to me in a time period. 
+                             The tasks were related to the Android application development. 
+                             each task had a fixed time limit. I got to experience time management.
+                            <b>Skills: Android Development, Git & GitHub</b> 
+    
+                        </div>
+                    </div>
+
+
+
+            </div>
+
+            
+        </section>
+
+        <!-- Recent Works -->
+        
+        <section class="pt-16" id="projects">
+            <h2 class="text-xl font-bold">Recent Projects</h2>
+            <div class="flex flex-col md:flex-row mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="flex flex-col flex-1 gap-2 bg-[--bg-green] rounded-lg drop-shadow-xl p-6">
+                    <div class="flex gap-6">
+                        
+                        <div class="flex flex-col text-[--bg-black] text-sm gap-2">
+                        
+                            <h2 class="text-lg font-bold">Malganga Dairy </h2>
+                            E-commerce Application : Online Milk & Milk Products Delivery
+                            <div class="text-xs text-[--secondary] font-bold">Teck Stack Used : Android Studio, Firebase (Firebase Authentication, Firebase Cloud Storage), Kotlin, XML, Room Database, Razorpay, Glide Library, Slider & Smooth Navigation.
+                            </div>
+                            <div class="flex items-center mt-3">
+                                <a href="https://github.com/Tejas-Pandule/MalgangaDairy" target="_blank">
+                                    <button class="rounded-full text-white py-2 px-4 bg-[var(--red)]">
+                                        View On GitHub
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                 </div>     
+                 
+                
+            </div>  
+
+
+
+            <div class="flex flex-col md:flex-row mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="flex flex-col flex-1 gap-2 bg-[--bg-green] rounded-lg drop-shadow-xl p-6">
+                    <div class="flex gap-6">
+                        
+                        <div class="flex flex-col text-[--bg-black] text-sm gap-2">
+                        
+                            <h2 class="text-lg font-bold">Talk Genie</h2>
+                            Talk Genie- OpenAI-based Chatbot Android Application
+                            <div class="text-xs text-[--secondary]  font-bold">Teck Stack Used : Android Studio, Kotlin and XML, OpenAi Api, Kotlin Coroutine, Glide, RecyclerView with Two different layouts & Postman (Used For Testing API)
+                            </div>
+                            <div class="flex items-center mt-3">
+                                <a href="https://github.com/Tejas-Pandule/TalkGenie" target="_blank">
+                                    <button class="rounded-full text-white py-2 px-4 bg-[var(--red)]">
+                                        View On GitHub
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                 </div>     
+                 
+                
+            </div>  
+
+
+
+
+        </section>          
+
+        <!-- Latest Post -->
+        <section class="pt-16" id="blog">
+            <h2 class="text-xl font-bold">Certifications</h2>
+            <div class="flex flex-1 mt-6 gap-4 text-[var(--color-primary)]">
+                <div class="bg-[var(--pink)] p-4 flex-1 rounded-md shadow-lg">
+                    <h2 class="text-lg font-bold">Java Object Oriented Programming</h2>
+                    <div class="">
+                        <span class="text-[var(--color-info)] text-xs font-bold">31 December 2022 </span>
+                        <img src="assets\direction.png " width="20" height="20"> 
+                        <span class="text-[var(--red)] text-sm font-bold">
+                         <a href="https://drive.google.com/file/d/1NevMOBD8kUsYkqcY21LsVfE-6b-TW2lz/view?usp=sharing" target="_top">View Certificate</a>  
+                           
+                        </span>
+                    </div>
+                </div>
+                <div class="bg-[var(--pink)] p-4 flex-1 rounded-md shadow-lg">
+                    <h2 class="text-lg font-bold">Learning SQL Programming</h2>
+                    <div class="">
+                        <span class="text-[var(--color-info)] text-xs font-bold">25 January 2023 </span>
+                        <img src="assets\direction.png " width="20" height="20"> 
+                        <span class="text-[var(--red)] text-sm font-bold">
+                         <a href="https://drive.google.com/file/d/1hCWc_EHREXYMrjKprTaNUMnM7nIXk9kl/view?usp=sharing" target="_top"> View Certificate</a>  
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="flex flex-1 mt-6 gap-4 text-[var(--color-primary)]">
+                
+                <div class="bg-[var(--pink)] p-4 flex-1 rounded-md shadow-lg">
+                    <h2 class="text-lg font-bold">Learning Git and GitHub</h2>
+                    <div class="">
+                        <span class="text-[var(--color-info)] text-xs font-bold">01 December 2023 </span>
+                        <img src="assets\direction.png " width="20" height="20"> 
+                        <span class="text-[var(--red)] text-sm font-bold">
+                           <a href="https://drive.google.com/file/d/1QlYVpICUtCQi-YuYfNIihyA48WlYfzyx/view?usp=sharing" target="_top"> View Certificate</a>
+                           
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="bg-[var(--pink)] p-4 flex-1 rounded-md shadow-lg">
+                    <h2 class="text-lg font-bold">MHT-CET</h2>
+                    <div class="">
+                        <span class="text-[var(--color-info)] text-xs font-bold">03 August 2018  </span>
+                        <img src="assets\direction.png" width="20" height="20"> 
+                        <span class="text-[var(--red)] text-sm font-bold">
+                        <a href="https://drive.google.com/file/d/1V4M7vYOfga08_32reeXmMmSyblyFFLbn/view?usp=sharing "> View Certificate</a> 
+                            
+                        </span>
+                    </div>
+                </div>
+
+
+                
+                
+            </div>
+
+
+
+           
+
+
+                
+                
+            </div>
+
+
+        </section>
+
+
+       
+
+
+        
+
+    
+
+
+        
+    </div>
+
+    <!-- Footer -->
+
+    <section class="flex items-center mt-8 justify-center p-4 bg-[var(--blueshade)] text-[var(--color-secondary)]">
+       <img src="assets\smiley.png" width="20"> Thank you..!  <img src="assets\smiley.png" width="20">
+    
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script/script.js" defer></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
